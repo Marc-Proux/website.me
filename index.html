@@ -5,7 +5,7 @@
         <title>Marc Proux</title>
         <link rel="stylesheet" href="css/style.css" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/aos.js"></script>
         <script src="js/jquery.js"></script>
         <script src="js/typed.js"></script>
         <script src="js/script.js"></script>
@@ -36,7 +36,7 @@
                   </svg></a>
             </section>
 
-            <section id="about" class="section">
+            <section id="about" class="section section--color-background">
                 <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div id="about-me--picture--div"></div>
                     <img src="img/aboutme.png" id="about-me--picture" alt=""/>
@@ -72,9 +72,144 @@
             </section>
 
             <section id="skills" class="section section--fixed-background">
-                Services
+                <div id="slide-0" class="slides">
+                    <div class="skills" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <p>Compétence de programmation</p> 
+                        <div class="skills-graph">
+                            <div class="skills-content" id="html">
+                                <div class="progress-bar--outer">
+                                    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
+                                        <circle class="progress-bar--circle"
+                                            cx="250"
+                                            cy="250"
+                                            r="200"
+                                            stroke-width="24"
+                                            fill="transparent"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="progress-bar--inner">
+                                    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
+                                        <circle class="progress-bar--circle" id="HTML" value="90"
+                                            cx="250"
+                                            cy="250"
+                                            r="200"
+                                            stroke-width="24"
+                                            fill="transparent"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="progress-bar--text">
+                                    <img src="img/ico/html_css.svg" alt=""/>
+                                    <!-- <p class="text-text">90%</p> -->
+                                </div>
+                            </div>
+                            
+                            <div class="skills-content" id="js">
+                                <div class="progress-bar--outer">
+                                    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
+                                        <circle class="progress-bar--circle"
+                                            cx="250"
+                                            cy="250"
+                                            r="200"
+                                            stroke-width="24"
+                                            fill="transparent"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="progress-bar--inner">
+                                    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
+                                        <circle class="progress-bar--circle" id="HTML" value="80"
+                                            cx="250"
+                                            cy="250"
+                                            r="200"
+                                            stroke-width="24"
+                                            fill="transparent"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="progress-bar--text">
+                                    <img src="img/ico/js.svg" alt=""/>
+                                    <!-- <p class="text-text">90%</p> -->
+                                </div>
+                            </div>
+
+                            <div class="skills-content" id="python">
+                                <div class="progress-bar--outer">
+                                    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
+                                        <circle class="progress-bar--circle"
+                                            cx="250"
+                                            cy="250"
+                                            r="200"
+                                            stroke-width="24"
+                                            fill="transparent"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="progress-bar--inner">
+                                    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
+                                        <circle class="progress-bar--circle" id="HTML" value="88"
+                                            cx="250"
+                                            cy="250"
+                                            r="200"
+                                            stroke-width="24"
+                                            fill="transparent"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="progress-bar--text">
+                                    <img src="img/ico/python.svg" alt=""/>
+                                    <!-- <p class="text-text">90%</p> -->
+                                </div>
+                            </div>
+
+                            <div class="skills-content" id="c">
+                                <div class="progress-bar--outer">
+                                    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
+                                        <circle class="progress-bar--circle"
+                                            cx="250"
+                                            cy="250"
+                                            r="200"
+                                            stroke-width="24"
+                                            fill="transparent"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="progress-bar--inner">
+                                    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
+                                        <circle class="progress-bar--circle" id="HTML" value="85"
+                                            cx="250"
+                                            cy="250"
+                                            r="200"
+                                            stroke-width="24"
+                                            fill="transparent"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="progress-bar--text">
+                                    <img src="img/ico/c.svg" alt=""/>
+                                    <!-- <p class="text-text">90%</p> -->
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div id="slide-1" class="slides">
+                    <p>Compétence linguistique</p>
+                </div>
+                <div id="slide-2" class="slides">
+                    <p>Soft skills</p>
+                </div>
+                <a id="prev" onclick="changeSlide(-1)"><img src="img/ico/arrow-left.svg"/></a>
+                <a id="next" onclick="changeSlide(1)"><img src="img/ico/arrow-right.svg"/></a>
+                <div id="dot-container">
+                    <span class="dot" onclick="showSlide(0)"></span> 
+                    <span class="dot" onclick="showSlide(1)"></span> 
+                    <span class="dot" onclick="showSlide(2)"></span> 
+                </div>
+
             </section>
-            <section id="contact" class="section">
+            <section id="contact" class="section section--color-background">
                 Contact
             </section>
         </main>

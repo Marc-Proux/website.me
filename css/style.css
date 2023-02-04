@@ -10,6 +10,8 @@
     font-family: 'OpenSans', sans-serif;
     scroll-behavior: smooth;
     color:#ffffff;
+    --theme: #EF212A;
+    --background: #2C2D2F;
 }
 
 body{
@@ -30,8 +32,8 @@ body{
     background-attachment: fixed;
 }
 
-svg{
-    fill: red;
+.section--color-background{
+    background-color: var(--background);
 }
 
 /* Home page CSS */
@@ -55,14 +57,14 @@ svg{
 }
 
 .header{
-    --background: rgba(255, 255, 255, 0.1);
+    --header-background: rgba(255, 255, 255, 0.1);
     font-size: 115%;
     display: flex;
     align-items:center;
     justify-content: space-between;
     padding: 20px 50px;
     color: inherit;
-    background: var(--background);
+    background: var(--header-background);
     position: fixed;
     width: 100%;
     transition: background 250ms ease-in;
@@ -73,7 +75,7 @@ svg{
 }
 
 .header-scrolled{
-    --background: #2C2D2F;  
+    --header-background: #2C2D2F;  
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -95,13 +97,12 @@ svg{
 }
 
 .nav-link:hover{
-    color: #1561be;
+    color: var(--theme);
     font-size: 120%;
 }
 
 .active{
-    --active_text_color: #1561be;
-    color: var(--active_text_color);
+    color: var(--theme);
     font-weight: bold;
 }
 
@@ -143,7 +144,7 @@ svg{
     z-index: 100;
 }
 .arrows path {
-    stroke: #1561be;
+    stroke: var(--theme);
     fill: transparent;
     stroke-width: 1px;  
     animation: arrow 2s infinite;
@@ -183,7 +184,6 @@ svg{
 /* About me page CSS */
 
 #about{
-    background-color: #2C2D2F;
     position: relative;
 }
 
@@ -220,7 +220,7 @@ svg{
 }
 
 #about-typing{
-    color: #1561be;
+    color: var(--theme);
 }
 
 #about-me--text{
@@ -233,7 +233,7 @@ svg{
 }
 
 #about-me--text a{
-    color: #1561be;
+    color: var(--theme);
     text-decoration: none;
 }
 
@@ -280,7 +280,8 @@ svg{
     font-size: 15px;
     position: relative;
     overflow: hidden;
-    background-color: #1561be;
+    cursor: pointer;
+    background-color: var(--theme);
 }
   
 #cv-button:hover {
@@ -296,7 +297,7 @@ svg{
     top: 0;
     width: 0;
     height: 100%;
-    background-color: #4d8cda;
+    background-color: #fb3f52;
     transform: skewX(45deg);
     z-index: -1;
     transition: width 1000ms;
@@ -306,8 +307,126 @@ svg{
     width: 250%;
 }
 
-
+/* Skills page CSS */
 
 #skills{
     background-image: url('../img/services.jpeg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides{
+    width: 80%;
+    height: 70vh;
+    border-radius: 15px;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+#prev img{
+    position: absolute;
+    left: 5%;
+    top: 50vh;
+    width:40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#next img{
+    position: absolute;
+    right: 5%;
+    top: 50vh;
+    width:40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#dot-container{
+    position: absolute;
+    bottom: 7vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    margin: 0 10px;
+    border: var(--theme) 2px solid;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.4s linear;
+}
+
+.dot.active{
+    background-color: #ea335599;
+}
+
+.skills{
+    width: 100%;
+    height: 100%;
+}
+
+.skills p{
+    height: 10%;
+}
+
+.skills-graph{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills-content{
+    aspect-ratio: 1/1;
+    width: 15%;
+    position: relative;
+    flex: 0 0 34%;
+}
+
+.progress-bar--inner{
+    position: absolute;
+    top:0;
+    width: 100%;
+    z-index: 1;
+    transform: rotate(-90deg);
+}
+
+.progress-bar--outer{
+    transform: rotate(-90deg);
+    stroke:rgba(139, 136, 136, 0.34);
+}
+
+.progress-bar--inner svg circle{
+    stroke-dasharray: 1257;
+    stroke-dashoffset: 1257;
+    stroke: var(--theme);
+}
+
+.progress-bar--text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-bar--text img{
+    position: absolute;
+    width:40%;
 }
