@@ -1,0 +1,15 @@
+.modal{
+    --bs-modal-bg: #2C2D2F !important;
+    --bs-modal-header-border-color: #4d4d4d !important;
+    --bs-modal-footer-border-color: #4d4d4d !important;
+    --bs-modal-color: #BDBDBD !important;
+
+    &-body p{
+        color: var(--bs-modal-color) !important;
+    }
+
+    &-header, &-footer{
+        background-color: #222428 !important;
+        color: #fff !important;
+    }
+}

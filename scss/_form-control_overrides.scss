@@ -1,0 +1,15 @@
+.form-control {
+    border: 0 !important;
+    border-bottom: 1px solid #BDBDBD !important;
+    background-color: #2C2D2F !important;
+    outline: none !important;
+    width: 100% !important;
+    resize: none !important;
+    // padding: 2% !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+
+    &:focus {
+        border-bottom: 1px solid #fff !important;
+    }
+}

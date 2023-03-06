@@ -1,0 +1,8 @@
+.toast{
+    --bs-toast-bg: rgba(44, 45, 47, 0.85) !important;
+    --bs-toast-header-bg: rgba(34, 36, 40, 0.85) !important;
+
+    &-body p{
+        color: #BDBDBD !important;
+    }
+}

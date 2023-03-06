@@ -1,0 +1,33 @@
+.navbar-brand {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFFFFF !important;
+}
+
+.navbar-nav {
+    column-gap: 50px;
+    
+    .nav-link{
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.2s ease-in;
+        cursor: pointer;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+
+        &.active {
+            color: #EF212A !important;
+            font-weight: bold;
+        }
+
+        &:hover {
+            color: #EF212A !important;
+            font-size: 120%;
+        }
+    }
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}

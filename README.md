@@ -1,30 +1,32 @@
 <h1 align="center">WebSite.me</h1>
 
 <p align="center">
-    Website.me is a portfolio website template for developers. It's a one page template with a clean and modern design. It's build with Jquery and Bootstrap 4. It's fully responsive and looks great on all devices. It's easy to customize and it features a working contact form with PHP.
+    Website.me est un portfolio pour développeurs. Il s'agit d'un modèle de page unique avec un design moderne et propre. Il est construit avec Jquery et Bootstrap 4. Il est entièrement responsive et s'affiche parfaitement sur tous les appareils. Il est facile à personnaliser et il comporte un formulaire de contact fonctionnel avec django.
 </p>
 <hr />
 
 ## Demo
 mettre vidéo et lien vers le site
 
-## Features
-⚡️ Modern Design<br/>
-⚡️ One Page Template<br/>
-⚡️ Fully Responsive<br/>
+## Fonctionnalités
+⚡️ Design moderne<br/>
+⚡️ Template en use seule page<br/>
+⚡️ Entièrement responsive<br/>
 ⚡️ Bootstrap 5<br/>
-⚡️ Typed Animations<br/>
-⚡️ Reaveal Animations<br/>
+⚡️ Animation de la dactylographie<br/>
+⚡️ Reveal Animations<br/>
+⚡️ Formulaires de contact fonctionnels<br/>
+⚡️ Annonce a l'ouverture du site<br/>
 
 
 
 ## Packages
 HTML5<br/>
 CSS3<br/>
-Bootstrap 5<br/>
 Jquery<br/>
-<a href="https://github.com/mattboldt/typed.js">Typed.js<br/>
+<a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Bootstrap 5</a><br/>
+<a href="https://github.com/mattboldt/typed.js">Typed.js</a><br/>
 <a href="https://michalsnik.github.io/aos/">aos.js</a><br/>
 
-## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+## Licence
+Ce projet est sous licence MIT - voir le fichier [LICENSE.md](LICENSE.md) pour plus de détails.

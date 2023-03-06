@@ -1,0 +1,48 @@
+.form-floating{
+    position: relative !important;
+    height: 100% !important;
+
+    > .form-control,
+    > .form-control-plaintext,
+    > .form-select {
+        height: calc(2.5rem + 2px) !important;
+    }
+
+    > .form-control#form-message{
+        height: 100% !important;
+    }
+
+    > label {
+        position: absolute !important;
+        // display: flex !important;
+        // align-items: center !important;
+        left: 0 !important;
+        cursor: text !important;
+        transition: all 0.3s ease-in-out !important;
+        padding: 0.5rem 0.75rem !important;
+    }
+
+    > label#message{
+        display: flex !important;
+        align-items: center !important;
+        top: -40%;
+    }
+
+    > .form-control:focus,
+    > .form-control:not(:placeholder-shown),
+    > .form-control-plaintext,
+    > .form-select {
+        ~ label {
+            opacity: 0.8 !important;
+            padding: 0 0.75rem !important;
+            margin: 0 !important;
+            transform: translateY(0) !important;
+            top: -33% !important;
+        }
+
+        ~ label#message{
+            top: -50% !important;
+        }
+    }
+
+}

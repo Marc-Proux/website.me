@@ -1,0 +1,35 @@
+.card{
+    --bs-card-bg: #2C2D2F !important;
+    width: 80% !important;
+    height: 100% !important;
+    padding: 1rem;
+    padding-bottom: 0;
+    border-radius: 15px !important;
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+    // aspect-ratio: 1/1 !important;
+    // width: 90% !important;
+    border-radius: 15px !important;
+}
+
+.card-body {
+    padding: 1rem 0 !important;
+
+    .card-text{
+        color: #BDBDBD !important;
+    }
+}
+
+.card-bottom{
+    margin-bottom: 1rem;
+    &.disabled{
+        display: flex;
+        p{
+            margin: auto 1rem !important;
+            color: #FF8C00 !important;
+        }
+    }
+}

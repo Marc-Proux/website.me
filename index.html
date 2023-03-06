@@ -1,218 +1,639 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <title>Marc Proux</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="js/aos.js"></script>
-        <script src="js/jquery.js"></script>
-        <script src="js/typed.js"></script>
-        <script src="js/script.js"></script>
-    </head>
-
-    <body>
-        <header class="header">
-            <a id="logo" onclick="scrollFunction('home')">Marc Proux</a>
-            <ul class="nav-list">
-                <li><a id="home-sec" class="nav-link" onclick="scrollFunction('home')">Accueil</a></li>
-                <li><a id="about-sec" class="nav-link" onclick="scrollFunction('about')">Profil</a></li>
-                <li><a id="skills-sec" class="nav-link" onclick="scrollFunction('skills')">Compétences</a></li>
-                <li><a id="contact-sec" class="nav-link" onclick="scrollFunction('contact')">Contact</a></li>
-            </ul>
-        </header>
-
-        <main>
-            <section id="home" class="section section--fixed-background">
-                <div id="profile-picture">
-                    <img src="img/profile-picture.jpeg" alt="" />
-                    <p id="name">MARC PROUX</p>
-                    <p id="job">Etudiant en <span class="typed" id="home-typing"></span></p>
-                </div>
-                <a onclick="scrollFunction('about')" style="cursor:pointer"><svg class="arrows">
-                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
-                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
-                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
-                  </svg></a>
-            </section>
-
-            <section id="about" class="section section--color-background">
-                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <div id="about-me--picture--div"></div>
-                    <img src="img/aboutme.png" id="about-me--picture" alt=""/>
-                </div>
-
-                <div id="about-me" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <h2>Marc Proux, étudiant en <span class="typed" id="about-typing"></span></h2>
-                    <p id="about-me--text">Je suis étudiant en 3ème année à l'Ècole Nationale Supérieur d'Ingénieurs Sud Alsace (<a href="https://www.ensisa.uha.fr/" target="_blank">ENSISA</a>)
-                        en formation Informatique & Réseaux. Je suis passionné développement informatique et de nouvelle technologie
-                        et j'oriente mes projets et formations afin de me spécialiser de la conception de Logiciel et Web Aplication</p>
-                    <div id="about-me--icos">
-                        <div id="ico--age" class="ico--el">
-                            <img src="img/ico/calendar.svg" alt="" />
-                            <p><span class="ico-name">Age:</span> 20 ans</p>
-                        </div>
-                        <div id="ico--location" class="ico--el">
-                            <img src="img/ico/location.svg" alt="" />
-                            <p><span class="ico-name">Adresse:</span> 7A rue des Frères Lumière, 68350 Brunstatt, France</p>
-                        </div>
-                        <div id="ico--phone" class="ico--el">
-                            <img src="img/ico/phone.svg" alt="" />
-                            <p><span class="ico-name">Portable:</span> 06 12 55 68 30</p>
-                        </div>
-                        <div id="ico--email" class="ico--el">
-                            <img src="img/ico/email.svg" alt="" />
-                            <p><span class="ico-name">Email:</span> prouxmarc@gmail.com</p>
-                        </div>
-                    </div>
-                    <button id="cv-button" onclick="window.open('doc/cv.pdf', '_blank')">
-                        Télécharger mon CV
-                    </button>
-                </div>
-            </section>
-
-            <section id="skills" class="section section--fixed-background">
-                <div id="slide-0" class="slides">
-                    <div class="skills" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                        <p>Compétence de programmation</p> 
-                        <div class="skills-graph">
-                            <div class="skills-content" id="html">
-                                <div class="progress-bar--outer">
-                                    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
-                                        <circle class="progress-bar--circle"
-                                            cx="250"
-                                            cy="250"
-                                            r="200"
-                                            stroke-width="24"
-                                            fill="transparent"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="progress-bar--inner">
-                                    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
-                                        <circle class="progress-bar--circle" id="HTML" value="90"
-                                            cx="250"
-                                            cy="250"
-                                            r="200"
-                                            stroke-width="24"
-                                            fill="transparent"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="progress-bar--text">
-                                    <img src="img/ico/html_css.svg" alt=""/>
-                                    <!-- <p class="text-text">90%</p> -->
-                                </div>
-                            </div>
-                            
-                            <div class="skills-content" id="js">
-                                <div class="progress-bar--outer">
-                                    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
-                                        <circle class="progress-bar--circle"
-                                            cx="250"
-                                            cy="250"
-                                            r="200"
-                                            stroke-width="24"
-                                            fill="transparent"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="progress-bar--inner">
-                                    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
-                                        <circle class="progress-bar--circle" id="HTML" value="80"
-                                            cx="250"
-                                            cy="250"
-                                            r="200"
-                                            stroke-width="24"
-                                            fill="transparent"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="progress-bar--text">
-                                    <img src="img/ico/js.svg" alt=""/>
-                                    <!-- <p class="text-text">90%</p> -->
-                                </div>
-                            </div>
-
-                            <div class="skills-content" id="python">
-                                <div class="progress-bar--outer">
-                                    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
-                                        <circle class="progress-bar--circle"
-                                            cx="250"
-                                            cy="250"
-                                            r="200"
-                                            stroke-width="24"
-                                            fill="transparent"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="progress-bar--inner">
-                                    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
-                                        <circle class="progress-bar--circle" id="HTML" value="88"
-                                            cx="250"
-                                            cy="250"
-                                            r="200"
-                                            stroke-width="24"
-                                            fill="transparent"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="progress-bar--text">
-                                    <img src="img/ico/python.svg" alt=""/>
-                                    <!-- <p class="text-text">90%</p> -->
-                                </div>
-                            </div>
-
-                            <div class="skills-content" id="c">
-                                <div class="progress-bar--outer">
-                                    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
-                                        <circle class="progress-bar--circle"
-                                            cx="250"
-                                            cy="250"
-                                            r="200"
-                                            stroke-width="24"
-                                            fill="transparent"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="progress-bar--inner">
-                                    <svg version="1.1" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" class="svg-content">
-                                        <circle class="progress-bar--circle" id="HTML" value="85"
-                                            cx="250"
-                                            cy="250"
-                                            r="200"
-                                            stroke-width="24"
-                                            fill="transparent"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="progress-bar--text">
-                                    <img src="img/ico/c.svg" alt=""/>
-                                    <!-- <p class="text-text">90%</p> -->
-                                </div>
-                            </div>
-                        </div>    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marc Proux</title>
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg flex-fill px-4" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home">Marc Proux</a>
+                <button id="navbar-button" class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav nav">
+                    <li class="nav-item pt-2 pt-lg-O">
+                        <a id="home-sec" class="nav-link" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item pt-2 pt-lg-O">
+                        <a id="about-sec" class="nav-link" href="#about">Profil</a>
+                    </li>
+                    <li class="nav-item pt-2 pt-lg-O">
+                        <a id="skills-sec" class="nav-link" href="#skills">Compétences</a>
+                    </li>
+                    <li class="nav-item pt-2 pt-lg-O">
+                        <a id="contact-sec" class="nav-link" href="#history">Parcours</a>
+                    </li>
+                    <li class="nav-item pt-2 pt-lg-O">
+                        <a id="contact-sec" class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item pt-2 pt-lg-O">
+                        <a id="contact-sec" class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+        <section id="home" class="section section--fixed-background container-fluid d-flex align-items-center">
+            <div class="row flex-fill d-flex flex-column align-items-center">
+                <div class="col-11 col-md-5 col-lg-4">
+                    <div id="profile-picture" class="text-center">
+                        <img src="img/profile-picture.jpeg" alt="Marc Proux" />
+                        <h1 id="name" class="fs-1">MARC PROUX</h1>
+                        <p id="job" class="fs-6">Etudiant en <span class="typed" id="home-typing"></span></p>
                     </div>
                 </div>
-                <div id="slide-1" class="slides">
-                    <p>Compétence linguistique</p>
-                </div>
-                <div id="slide-2" class="slides">
-                    <p>Soft skills</p>
-                </div>
-                <a id="prev" onclick="changeSlide(-1)"><img src="img/ico/arrow-left.svg"/></a>
-                <a id="next" onclick="changeSlide(1)"><img src="img/ico/arrow-right.svg"/></a>
-                <div id="dot-container">
-                    <span class="dot" onclick="showSlide(0)"></span> 
-                    <span class="dot" onclick="showSlide(1)"></span> 
-                    <span class="dot" onclick="showSlide(2)"></span> 
-                </div>
+            </div>
+            <a href="#about" style="cursor:pointer"><svg class="arrows">
+                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+              </svg></a>
+        </section>
 
-            </section>
-            <section id="contact" class="section section--color-background">
-                Contact
-            </section>
-        </main>
-    </body>
+        <section id="about" class="section section--color-background container-fluid d-flex align-items-center">
+            <div class="row gy-5 my-5">
+                <div class="col-12 col-lg-5 d-flex align-items-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="row flex-fill d-flex justify-content-center">
+                        <div class="col-9 col-md-6 col-lg-10 col-xl-9">
+                            <div id="about-me_picture_container">
+                                <img src="img/aboutme.png" id="about-me_picture" alt="Marc Proux"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="container d-flex flex-column d-lg-none">
+                        <h2 class="fst-2 flex-fill">Marc Proux, étudiant en <br class="d-md-none"><span class="typed" id="about-me_typed"></span>&#8205</h2>
+                        <p id="about-me_text" class="fst-3">Je suis étudiant en 3ème année à l'École Nationale Supérieur d'Ingénieurs Sud Alsace (<a href="https://www.ensisa.uha.fr/" target="_blank">ENSISA</a>)
+                            en formation Informatique & Réseaux. Je suis passionné par le développement informatique et les nouvelles technologies, et je suis actuellement en train de me spécialiser 
+                            dans la conception de logiciels et d'applications web. J'oriente donc mes projets et ma formation en ce sens.</p>
+                        <div class="row">
+                            <div class="col-6 about-me_icos_container mb-3">
+                                <img src="img/ico/calendar.svg" alt="Age" />
+                                <p class="fst-4"><span class="about-me_icos_container_name">Age:<br></span> 20 ans</p>
+                            </div>
+                            <div class="about-me_icos_container col-6 mb-3">
+                                <img src="img/ico/location.svg" alt="Location" />
+                                <p class="fst-4"><span class="about-me_icos_container_name">Adresse:<br></span> 7A&nbsprue&nbspdes&nbspFrères Lumière, 68350 Brunstatt, France</p>
+                            </div>
+                            <div class="about-me_icos_container col-6 mb-3">
+                                <img src="img/ico/phone.svg" alt="Phone" />
+                                <p class="fst-4"><span class="about-me_icos_container_name">Téléphone:<br></span> 06 12 55 68 30</p>
+                            </div>
+                            <div class="about-me_icos_container col-6 mb-3">
+                                <img src="img/ico/email.svg" alt="Email" />
+                                <p class="fst-4" style="user-select: none;"><span class="about-me_icos_container_name">Email:<br></span> proux<!--BOT!--ONLY!-->marc<!--BOT!--BATE!-->@<!--NOT4ROBOT!-->gmail<!--UCANT6ME!-->.<!--H!DE!-->com</p>
+                            </div>
+                        </div>
+                        <button id="cv-button" onclick="window.open('doc/cv.pdf', '_blank')">
+                            Télécharger mon CV
+                        </button>
+                    </div>
+                    <div class="d-none d-lg-block mx-2 mx-xl-5" data-aos="fade-left" data-aos-offset="350" data-aos-easing="ease-in-sine">
+                        <h2 class="fst-2 flex-fill">Marc Proux, étudiant en <br class="d-md-none"><span class="typed" id="about-me_typed"></span>&#8205</h2>
+                        <p id="about-me_text" class="fst-3">Je suis étudiant en 3ème année à l'École Nationale Supérieur d'Ingénieurs Sud Alsace (<a href="https://www.ensisa.uha.fr/" target="_blank">ENSISA</a>)
+                            en formation Informatique & Réseaux. Je suis passionné par le développement informatique et les nouvelles technologies, et je suis actuellement en train de me spécialiser 
+                            dans la conception de logiciels et d'applications web. J'oriente donc mes projets et ma formation en ce sens.</p>
+                        <div class="row">
+                            <div class="col-6 about-me_icos_container mb-3">
+                                <img src="img/ico/calendar.svg" alt="Age" />
+                                <p class="fst-4"><span class="about-me_icos_container_name">Age:<br></span> 20 ans</p>
+                            </div>
+                            <div class="about-me_icos_container col-6 mb-3">
+                                <img src="img/ico/location.svg" alt="Location" />
+                                <p class="fst-4"><span class="about-me_icos_container_name">Adresse:<br></span> 7A&nbsprue&nbspdes&nbspFrères Lumière, 68350 Brunstatt, France</p>
+                            </div>
+                            <div class="about-me_icos_container col-6 mb-3">
+                                <img src="img/ico/phone.svg" alt="Phone" />
+                                <p class="fst-4"><span class="about-me_icos_container_name">Téléphone:<br></span> 06 12 55 68 30</p>
+                            </div>
+                            <div class="about-me_icos_container col-6 mb-3">
+                                <img src="img/ico/email.svg" alt="Email" />
+                                <p class="fst-4" style="user-select: none;"><span class="about-me_icos_container_name">Email:<br></span> proux<!--BOT!--ONLY!-->marc<!--BOT!--BATE!-->@<!--NOT4ROBOT!-->gmail<!--UCANT6ME!-->.<!--H!DE!-->com</p>
+                            </div>
+                        </div>
+                        <button id="cv-button" onclick="window.open('doc/cv.pdf', '_blank')">
+                            Télécharger mon CV
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="skills" class="section section--fixed-background d-flex align-items-center">
+            <div id="skills-carousel" class="carousel slide flex-fill d-flex align-items-center">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#skills-carousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#skills-carousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#skills-carousel" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner d-flex align-items-center">
+                    <div class="carousel-item active" id="slide-0" type="circular">
+                        <div class="container h-100 d-flex align-items-center justify-content-center">
+                            <div class="row justify-content-center flex-fill">
+                                <h2 class="fst-2" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Compétences de programmation</h2>
+                                <div class="col-12 col-lg-6 col-xxl-5 d-flex flex-column justify-content-center" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                                    <div class="row justify-content-center gy-3">
+                                        <div class="col-6 col-md-3 offset-md-1 col-lg-6 offset-lg-0">
+                                            <img class="skills-img" src="img/ico/html_css.svg" alt="Html Css"/>
+                                        </div>
+                                        <div class="col-6 col-md-3 offset-md-1 col-lg-6 offset-lg-0">
+                                            <img class="skills-img" src="img/ico/js.svg" alt="JavaScript"/>
+                                        </div>
+                                        <div class="d-none d-md-block d-lg-none w-100"></div>
+                                        <div class="col-6 col-md-3 offset-md-1 col-lg-6 offset-lg-0">
+                                            <img class="skills-img" src="img/ico/python.svg" alt="Python"/>
+                                        </div>
+                                        <div class="col-6 col-md-3 offset-md-1 col-lg-6 offset-lg-0">
+                                            <img class="skills-img" src="img/ico/c.svg" alt="C"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 col-xxl-5 offset-xxl-1 d-flex flex-column justify-content-center" data-aos="fade-left" data-aos-offset="350" data-aos-easing="ease-in-sine">
+                                    <div class="row gy-4 justify-content-center">
+                                        <div class="col-6 col-md-3 offset-md-1 col-lg-6 offset-lg-0 d-flex flex-column align-items-center">
+                                            <div class="skills_text_content">
+                                                <img src="img/ico/web-design.svg" alt="Web design"/>
+                                                <h3 class="fst-4">Web Design</h3>
+                                                <p class="fst-5">Conception d'interface web attractive, avec son design, ses fonctionnalités et son identitée</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3 offset-md-1 col-lg-6 offset-lg-0 d-flex flex-column align-items-center">
+                                            <div class="skills_text_content">
+                                                <img src="img/ico/front-end.svg" alt="Front end"/>
+                                                <h3 class="fst-4">Front-end</h3>
+                                                <p class="fst-5">Développement web côté client à l'aide des outils tels que HTML, CSS, JavaScript/JQuery et Bootstrap, pour la création de sites web dynamiques et interactifs.</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-none d-md-block d-lg-none w-100"></div>
+                                        <div class="col-6 col-md-3 offset-md-1 col-lg-6 offset-lg-0 d-flex flex-column align-items-center">
+                                            <div class="skills_text_content">
+                                                <img src="img/ico/back-end.svg" alt="Back End"/>
+                                                <h3 class="fst-4">Back-end</h3>
+                                                <p class="fst-5">Développement web côté serveur et mise en ligne à l'aide des outils Django et php</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3 offset-md-1 col-lg-6 offset-lg-0 d-flex flex-column align-items-center">
+                                            <div class="skills_text_content">
+                                                <img src="img/ico/oop.svg" alt="Oop"/>
+                                                <h3 class="fst-4">Orienté Objet</h3>
+                                                <p class="fst-5">Développement d'applications à l'aide de langages de programmation orientés objet tels que Python, Java et C++</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="slide-1" type="linear">
+                        <div class="container h-100 d-flex align-items-center justify-content-center">
+                            <div class="row gy-5 justify-content-center">
+                                <div class="col-12 col-lg-6">
+                                    <h2 class="fst-2 my-3">Compétences linguistique</h2>
+                                    <div class="d-flex flex-column justify-content-around h-100">
+                                        <div class="progress-container my-3">
+                                            <h3 class="fst-3">Français</h3>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <p class="fst-5">Langue natale</p>
+                                        </div>
+                                        <div class="progress-container my-3">
+                                            <h3 class="fst-3">Anglais</h3>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <p class="fst-5">Niveau: B1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="col-12">
+                                        <h2 class="fst-2 my-3">Maitrise d'outils et logiciels</h2>
+                                    </div>
+                                    <div class="row gy-3 justify-content-center">
+                                        <div class="col-6 col-md-4 col-lg-6 d-flex flex-column align-items-center">
+                                            <img class="skills-img" src="img/ico/vsc.svg" alt="Visual Studio Code"/>
+                                        </div>
+                                        <div class="col-6 col-md-4 offset-md-2 col-lg-6 offset-lg-0 d-flex flex-column align-items-center">
+                                            <img class="skills-img" src="img/ico/github.svg" alt="GitHub"/>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-6 d-flex flex-column align-items-center">
+                                            <img class="skills-img" src="img/ico/office.svg" alt="Office 365"/>
+                                        </div>
+                                        <div class="col-6 col-md-4 offset-md-2 col-lg-6 offset-lg-0 d-flex flex-column align-items-center">
+                                            <img class="skills-img" src="img/ico/django.svg" alt="Django"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="slide-2" type="linear">
+                        <div class="container h-100">
+                            <h2 class="fst-2 mt-lg-5">Soft skills</h2>
+                            <div class="row gy-3 justify-content-center flex-fill h-100">
+                                <div class="col-12 col-lg-6">
+                                    <div class="progress-container my-3">
+                                        <h3 class="fst-3">Communication</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="progress-container my-3">
+                                        <h3 class="fst-3">Travail d'équipe</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="progress-container my-3">
+                                        <h3 class="fst-3">Pédagogie</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="progress-container my-3">
+                                        <h3 class="fst-3">Leadership</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="progress-container my-3">
+                                        <h3 class="fst-3">Rigueur</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="progress-container my-3">
+                                        <h3 class="fst-3">Enthousiasme et curiosité</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#skills-carousel" data-bs-slide="prev">
+                    <img src="img/ico/arrow-left.svg" alt="Previous slide" />
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#skills-carousel" data-bs-slide="next">
+                    <img src="img/ico/arrow-right.svg" alt="Next slide" />
+                </button>
+            </div>
+        </section>
+
+        <section id="history" class="section section--color-background container-fluid py-5">
+            <div class="row mt-5 mx-3 flex-fill">
+                <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div id="formation-container">
+                        <h2 class="ms-2">Formation</h2>
+                        <div class="timeline h-100 w-100">
+                            <div class="timeline_container">
+                                <div class="timeline_container_header">
+                                    <h3 class="fst-3">Ingénieur Informatique & Réseaux</h3>
+                                    <p class="fst-5">2022 - À ce jour | ENSISA, France</p>
+                                </div>
+                                <div class="timeline_container_body">
+                                    <p class="fst-4">Formation d'ingénieur mettant l'accent sur le
+                                        génie logiciel, la modélisation et la science des
+                                        données, notamment à travers divers projets et
+                                        stages.</p>
+                                </div>
+                            </div>
+                            <div class="timeline_container">
+                                <div class="timeline_container_header">
+                                    <h3 class="fst-3">Cycle Post-Bac Intégré</h3>
+                                    <p class="fst-5">2020 - 2022 | ENSISA, France</p>
+                                </div>
+                                <div class="timeline_container_body">
+                                    <p class="fst-4">Classe préparatoire en vue d'intégrer les
+                                        formations ingénieur de l'ENSISA</p>
+                                </div>
+                            </div>
+                            <div class="timeline_container">
+                                <div class="timeline_container_header">
+                                    <h3 class="fst-3">Secourisme PSE1</h3>
+                                    <p class="fst-5">2018 | Ordre de Malte, France</p>
+                                    </p>
+                                </div>
+                                <div class="timeline_container_body">
+                                    <p class="fst-4">Formation Secouriste PSE1 au seins de
+                                        l'association Ordre de Malte France. J'ai intégré
+                                        une équipe de secours et participé à différents
+                                        postes de secours lors d'événements tels que le
+                                        SIAE Bourget.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-12 mt-5 col-lg-6 mt-lg-0" data-aos="fade-left" data-aos-offset="350" data-aos-easing="ease-in-sine">
+                    <div id="experience-container">
+                        <h2 class="ms-2">Expériences Professionnelles</h2>
+                        <div class="timeline h-100 w-100">
+                            <div class="timeline_container">
+                                <div class="timeline_container_header">
+                                    <h3 class="fst-3">Réserviste Opérationnel Armée de
+                                        Terre Française</h3>
+                                    <p class="fst-5">2021 - À ce jour | RMT, France</p>
+                                </div>
+                                <div class="timeline_container_body">
+                                    <ul>
+                                        <li>Grade de Caporal avec la de Fonction chef d'Equipe</li>
+                                        <li>Entrainement en Compagnie au combat, tir, secourisme</li>
+                                        <li>Formation des recrues</li>
+                                        <li>Encadrement d'un trinôme</li>
+                                        <li>Missions sentinelles et gardes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline_container">
+                                <div class="timeline_container_header">
+                                    <h3 class="fst-3">Conseiller Clientèle Recouvrement
+                                        Amiable (saisonnier)</h3>
+                                    <p class="fst-5">Étés 2020 et 2021 | Cetelem, France</p>
+                                </div>
+                                <div class="timeline_container_body">
+                                    <p class="fst-4">Classe préparatoire en vue d'intégrer les
+                                        formations ingénieur de l'ENSISA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section section--fixed-background d-flex container-fluid">
+            <div id="projects-container" class="px-0 px-lg-5" data-aos="fade-right" data-aos-offset="350" data-aos-easing="ease-in-sine">
+                <div class="row gy-5">
+                    <h2 id="portfolio_title" class="px-5 px-lg-0">Portfolio</h2>
+                    <div class="col-12 col-lg-4">
+                        <div class="card mx-auto">
+                            <img src="img/projects/abalone.jpeg" class="card-img-top" alt="Abalone">
+                            <div class="card-body">
+                                <h5 class="card-title">Abalone</h5>
+                                <p class="card-text">Projet d'immersion 3ème années. Développement en C du jeu de plateau Abalone avec intégration d'une IA et d'un mode LAN</p>
+                            </div>
+                            <div class="card-bottom">
+                                <a href="https://github.com/Marc-Proux/Abalone" target="_blank" class="btn btn-primary">GitHub</a>
+                            </div>
+                        </div>                      
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card mx-auto">
+                            <img src="img/projects/chatroom.jpg" class="card-img-top" alt="Chat Rooms">
+                            <div class="card-body">
+                                <h5 class="card-title">Chat Rooms</h5>
+                                <p class="card-text">Projet de fin de Semestre 3ème année.
+                                    Développement côté serveur et client d'une
+                                    application web de chat</p>
+                            </div>
+                            <div class="card-bottom">
+                                <a href="https://github.com/Marc-Proux/chatRoom" target="_blank" class="btn btn-primary">GitHub</a>
+                            </div>
+                        </div>                      
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card mx-auto">
+                            <img src="img/projects/directory_sync.jpg" class="card-img-top" alt="Directory Sync">
+                            <div class="card-body">
+                              <h5 class="card-title">Directory Sync</h5>
+                              <p class="card-text">Projet Java. Création d'une application
+                                permettant de synchroniser des répertoires
+                                entre plusieurs machines connecté au même réseaux.</p>
+                            </div>
+                            <div class="card-bottom disabled">
+                                <a href="" target="_blank" class="btn btn-primary disabled" aria-disabled="true">GitHub</a>
+                                <p class="fst-5">En développement</p>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section--color-background container-fluid pt-5">
+            <div class="row mt-5 mx-3 mx-xl-5 justify-content-start" id="contact-div">
+                <div class="col-12 col-lg-6">
+                    <div id="contact_title" class="pb-5">
+                        <h2>Contact</h2>
+                    </div>
+                    <form class="row needs-validation gy-4" id="contact-form" novalidate>
+                        <h3 id="contact-form_title" class="fst-3">Envoyez un message</h3>
+                        <div class="col-6">
+                            <div class="contact-form_container form-floating" id="form-content--name">
+                                <input type="text" id="form-name" class="form-control" required placeholder=" ">
+                                <label for="form-name" class="fst-3">Nom</label>
+                                <div class="invalid-feedback">
+                                    Merci de renseigner votre nom.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="contact-form_container form-floating" id="form-content--phone">
+                                <input type="tel" class="form-control" id="form-phone" pattern="[0-9]{10}" placeholder=" " required>
+                                <label for="form-phone" class="fst-3">Téléphone</label>
+                                <div class="invalid-feedback">
+                                    Merci de renseigner un numéro valide.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="contact-form_container form-floating" id="form-content--email">
+                                <input type="email" class="form-control" id="form-email" placeholder=" " pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                                <label for="form-email" class="fst-3">Email</label>
+                                <div class="invalid-feedback">
+                                    Merci de renseigner un email valide. (exemple@domain.com)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="form-content--message">
+                            <div class="contact-form_container form-floating">
+                                <textarea id="form-message" class="form-control" rows="7" placeholder=" " required></textarea>
+                                <label id="message" for="form-message" class="fst-3">Message</label>
+                                <div class="invalid-feedback">
+                                    Merci de renseigner un message.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row-reverse mt-4">
+                            <button class="mb-3" id="form-button">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-none d-lg-flex flex-column col-5 offset-1" id="contact-text">
+                    <div id="contact_title" class="pb-4">
+                        <h2>&zwnj;</h2>
+                    </div>
+                    <div class="row gy-5">
+                        <div class="col-12 contact-text_container">
+                            <img src="img/ico/location.svg" alt="Location">
+                            <div>
+                                <h3 class="fst-3">Adresse</h3>
+                                <p>7A rue des frères Lumière, Brunstatt</p>
+                            </div>
+                        </div>
+                        <div class="col-12 contact-text_container">
+                            <img src="img/ico/phone.svg" alt="Phone">
+                            <div>
+                                <h3 class="fst-3">Téléphone</h3>
+                                <p>+33 6 12 55 68 30</p>
+                            </div>
+                        </div>
+                        <div class="col-12 contact-text_container">
+                            <img src="img/ico/email.svg" alt="Email">
+                            <div class="contact-text_container_description">
+                                <h3 class="fst-3">Email</h3>
+                                <p style="user-select: none;">proux<!--BOT!--ONLY!-->marc<!--BOT!--BATE!-->@<!--NOT4ROBOT!-->gmail<!--UCANT6ME!-->.<!--H!DE!-->com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal fade" id="sending-mail-loading" data-bs-backdrop="static" aria-labelledby="modal-title">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title">Envoi du message</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex flex-column align-items-center">
+                        <div class="loader my-4">
+                            <div class="loader-square"></div>
+                            <div class="loader-square"></div>
+                            <div class="loader-square"></div>
+                            <div class="loader-square"></div>
+                            <div class="loader-square"></div>
+                            <div class="loader-square"></div>
+                            <div class="loader-square"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="form-confirmation" aria-labelledby="modal-title">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title">Message envoyé</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Votre message a bien été envoyé.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="form-error" aria-labelledby="modal-title">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title">Erreur</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Une ou plusieurs informations sont erronées. Merci de vérifier vos informations et de réessayer.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="fatal-error" aria-labelledby="modal-title">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title">Erreur</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Une erreur s'est produite. Veuillez réessayer ultérieurement</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-fixed top-0 end-0 p-3" style="z-index: 999">
+            <div id="annonce" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                <div class="toast-header">
+                    <strong class="me-auto">Annonce</strong>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    <p>Bonjour,</p>
+                    <p>Bienvenue sur mon Portfolio et merci de vous intéresser à mon profil.</p>
+                    <p>Je suis actuellement à la recherche d'un stage de 2 mois pour le 3 Juillet ainsi qu'un alternance pour les années scolaires 2023-2024 et 2024-2025.</p>
+                    <p>Vous pouvez me contacter via le formulaire ou en utilisant mes coordonnées.</p>
+                    <p>Bonne visite</p>
+                    <p>Marc Proux</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container py-4">
+            <div class="row justify-content-center align-items-center gy-2">
+                <div class="col-12 col-md-5">
+                    <p class="fst-3">&copy; 2023 - Marc Proux</p>
+                </div>
+                <div class="col-12 col-md-5 text-md-end">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/marc-proux-2b1b1b1b1/" target="_blank" class="">
+                                <i class="bi bi-linkedin fst-2"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item h-100">
+                            <a href="https://github.com/Marc-Proux" target="_blank" class="text-decoration-none">
+                                <i class="bi bi-github fst-2"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item ">
+                            <a href="https://twitter.com/PrxMarc" target="_blank" class="text-decoration-none">
+                                <i class="bi bi-twitter fst-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
