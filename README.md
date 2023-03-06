@@ -1,7 +1,7 @@
 <h1 align="center">WebSite.me</h1>
 
 <p align="center">
-    Website.me est un portfolio pour développeurs. Il s'agit d'un modèle de page unique avec un design moderne et propre. Il est construit avec Jquery et Bootstrap 4. Il est entièrement responsive et s'affiche parfaitement sur tous les appareils. Il est facile à personnaliser et il comporte un formulaire de contact fonctionnel avec django.
+    Website.me est un portfolio pour développeurs. Il s'agit d'un modèle de page unique avec un design moderne et propre. Il est construit avec Jquery et Bootstrap 5. Il est entièrement responsive et s'affiche parfaitement sur tous les appareils. Il est facile à personnaliser et il comporte un formulaire de contact fonctionnel avec django.
 </p>
 <hr />
 
